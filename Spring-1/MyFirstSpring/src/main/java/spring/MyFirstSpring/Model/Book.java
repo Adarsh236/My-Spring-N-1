@@ -16,8 +16,8 @@ public class Book {
     private  String title;
     private  String isbn;
 
-    @ManyToOne
-    private Publisher publisher;
+   /* @ManyToOne
+    private Publisher publisher;*/
 
     @ManyToMany
     @JoinTable(name = "author_book", joinColumns = @JoinColumn(name = "book_id"),
@@ -33,13 +33,13 @@ public class Book {
         /*Author = author;*/
     }
 
-    public Publisher getPublisher() {
+    /*public Publisher getPublisher() {
         return publisher;
     }
 
     public void setPublisher(Publisher publisher) {
         this.publisher = publisher;
-    }
+    }*/
 
     // for Id
     public Long getId() {
@@ -80,7 +80,7 @@ public class Book {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", isbn='" + isbn + '\'' +
-                ", authors=" + authors +
+                //", authors=" + authors +
                 '}';
     }
 

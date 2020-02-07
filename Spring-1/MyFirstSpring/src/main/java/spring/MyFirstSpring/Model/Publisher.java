@@ -1,3 +1,4 @@
+/*
 package spring.MyFirstSpring.Model;
 
 import javax.persistence.*;
@@ -107,3 +108,4 @@ public class Publisher {
         this.zip = zip;
     }
 } //Publisher
+*/

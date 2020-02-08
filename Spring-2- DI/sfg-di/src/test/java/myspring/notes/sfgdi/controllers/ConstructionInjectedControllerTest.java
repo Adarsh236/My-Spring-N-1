@@ -1,6 +1,6 @@
 package myspring.notes.sfgdi.controllers;
 
-import myspring.notes.sfgdi.services.GreetingServiceImpl;
+import myspring.notes.sfgdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class ConstructionInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructionInjectedController(new GreetingServiceImpl());
+        controller = new ConstructionInjectedController(new ConstructorGreetingService());
     }
 
     @Test
